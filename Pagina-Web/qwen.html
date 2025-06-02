@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qwen</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      background: linear-gradient(135deg, #00c3ff, #ffff1c);
+      color: black;
+      font-family: 'Roboto', sans-serif;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+    }
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    img, video {
+      width: 100%;
+      margin: 1em 0;
+      border-radius: 10px;
+    }
+    .volver {
+      background-color: #4caf50;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Qwen</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="chatgpt.html">ChatGPT</a>
+      <a href="claude.html">Claude</a>
+      <a href="deepseek.html">DeepSeek</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Qwen es un modelo de lenguaje desarrollado por Alibaba para mejorar la comprensión del lenguaje natural y el análisis de datos.</p>
+    <img src="Imagenes/Qwen.jpg" alt="Logo de Qwen">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KVfWnON9rPo?si=EmA-pkqQX8F_YOgK" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <a class="volver" href="index.html">← Volver a Inicio</a>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Daniela Fernanda Padilla Albarran </p>
+  </footer>
+  <script>
+    // Mini animación de confeti
+    setInterval(() => {
+      const confeti = document.createElement('div');
+      confeti.className = 'confeti';
+      confeti.style.left = Math.random() * window.innerWidth + 'px';
+      confeti.style.top = '-10px';
+      confeti.style.backgroundColor = `hsl(${Math.random()*360}, 70%, 60%)`;
+      document.body.appendChild(confeti);
+      setTimeout(() => confeti.remove(), 5000);
+    }, 300);
+  </script>
+
+</body>
+</html>

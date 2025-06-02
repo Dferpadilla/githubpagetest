@@ -1,0 +1,92 @@
+/* Fuente y configuración base */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #faa1ad, #fafbfd);
+  color: #333;
+  transition: background-color 1s;
+}
+
+header {
+  background-color: #b91fad;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  animation: cambiarColor 10s infinite alternate;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+section {
+  padding: 2em;
+  border-bottom: 1px solid #ccc;
+}
+
+.iconos-redes img {
+  width: 40px;
+  margin: 0.5em;
+  transition: transform 0.3s;
+}
+
+.iconos-redes img:hover {
+  transform: scale(1.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 0.5em;
+}
+
+input, textarea {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #f72c2c;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e40dae;
+}
+
+footer {
+  background-color: #af2e9a;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+@keyframes cambiarColor {
+  0% { background-color: #70385b; }
+  50% { background-color: #8b2f53; }
+  100% { background-color: #f35f8c; }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    img, video {
+      width: 100%;
+      margin: 1em 0;
+      border-radius: 10px;
+    }
+    .volver {
+      background-color: #ffd700;
+      color: #1e2a78;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Claude</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="chatgpt.html">ChatGPT</a>
+      <a href="deepseek.html">DeepSeek</a>
+      <a href="qwen.html">Qwen</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Claude es un modelo de lenguaje creado por Anthropic, diseñado con un enfoque ético en IA y basado en conversaciones seguras.</p>
+    <img src="Imagenes/Claude.png" alt="Logo de Claude">
+    
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/G7iPM9oWhZE?si=keNieTJqz5jDbnC6" title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen></iframe>
+    <hr> 
+    <a class="volver" href="index.html">← Volver a Inicio</a>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Daniela Fernanda Padilla Albarran</p>
+  </footer>
+  <script>
+    // Mini animación de confeti
+    setInterval(() => {
+      const confeti = document.createElement('div');
+      confeti.className = 'confeti';
+      confeti.style.left = Math.random() * window.innerWidth + 'px';
+      confeti.style.top = '-10px';
+      confeti.style.backgroundColor = `hsl(${Math.random()*360}, 70%, 60%)`;
+      document.body.appendChild(confeti);
+      setTimeout(() => confeti.remove(), 5000);
+    }, 300);
+  </script>
+</body>
+</html>
